@@ -1,0 +1,55 @@
+syntax = "proto3";
+
+package stock.v1;
+
+service Stock {
+    rpc Consultar (ConsultarRequest) returns (ConsultarResponse);
+    rpc Listar (ListarRequest) returns (ListarResponse);
+    rpc Reservar (ReservarRequest) returns (MovimientoStockResponse);
+    rpc Liberar (LiberarRequest) returns (MovimientoStockResponse);
+}
+
+message Medicamento {
+    string codigo_medicamento = 1;
+    string nombre = 2;
+    int32 unidades_disponibles = 3;
+}
+
+message ConsultarRequest {
+    string codigo_medicamento = 1; // identificador unico del medicamento (SKU)
+}
+
+message ListarRequest {
+    int32 pagina = 1;
+    int32 tamano_pagina = 2;
+}
+
+message ReservarRequest {
+    string codigo_medicamento = 1;
+    int32 cantidad = 2;
+    string id_dispensacion = 3; // referencia externa, para trazabilidad
+}
+
+message LiberarRequest {
+    string codigo_medicamento = 1;
+    int32 cantidad = 2;
+    string id_dispensacion = 3; // referencia a la dispensacion que se revierte
+}
+
+message MovimientoStockResponse {
+    bool exito = 1;
+    int32 unidades_resultantes = 2;
+    string mensaje = 3; // motivo si exito = false (ej: "stock insuficiente")
+}
+
+message ConsultarResponse {
+    string codigo_medicamento = 1;
+    string nombre = 2;
+    int32 unidades_disponibles = 3;
+    bool disponible = 4; // true si unidades_disponibles > 0
+}
+
+message ListarResponse {
+    repeated ConsultarResponse items = 1;
+    int32 total = 2;
+}

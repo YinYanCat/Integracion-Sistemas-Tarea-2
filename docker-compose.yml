@@ -1,0 +1,56 @@
+
+services:
+
+  gateway:
+    build:
+      context: ./gateway
+    ports: 
+      - "8080:8080"
+    environment:
+      TOKEN: "token123"
+      RATE_LIMIT: "5"
+      RATE_WINDOW: "10"
+    depends_on:
+      - bff-web
+      - servicio-stock
+      - servicio-despacho
+      - servicio-receta
+
+  bff-web:
+    build:
+      context: ./bff_web
+      expose:
+        - "8090"
+
+  servicio-stock:
+    build:
+      context: ./stock
+    volumes:
+      - stock_data:/data
+    environment:
+      STOCK_DB_PATH: /data/stock.db
+      STOCK_GRPC_PORT: "8101"
+    expose:
+      - "8101"
+    
+  servicio-despacho:
+    build:
+      context: ./despacho
+    volumes:
+      - despacho_data:/data
+    expose:
+      - "8102"
+    
+  servicio-receta:
+    build:
+      context: ./receta
+    volumes:
+      - receta_data:/data
+    expose:
+      - "8103"
+
+
+volumes:
+  stock_data:
+  despacho_data:
+  receta_data:
