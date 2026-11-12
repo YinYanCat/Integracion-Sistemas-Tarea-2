@@ -19,8 +19,8 @@ services:
   bff-web:
     build:
       context: ./bff_web
-      expose:
-        - "8090"
+    expose:
+      - "8090"
 
   servicio-stock:
     build:
