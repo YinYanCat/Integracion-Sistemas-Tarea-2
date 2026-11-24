@@ -54,7 +54,7 @@ class StockServicer(stock_pb2_grpc.StockServicer):
             return stock_pb2.MovimientoStockResponse()
 
         with db.get_connection() as conn:
-            exito, unidades, mensaje = db.descontar_unidades(
+            exito, unidades, mensaje = db.reservar_unidades(
                 conn, request.codigo_medicamento, request.cantidad, request.id_dispensacion
             )
 
@@ -74,7 +74,7 @@ class StockServicer(stock_pb2_grpc.StockServicer):
             return stock_pb2.MovimientoStockResponse()
 
         with db.get_connection() as conn:
-            exito, unidades, mensaje = db.reponer_unidades(
+            exito, unidades, mensaje = db.liberar_unidades(
                 conn, request.codigo_medicamento, request.cantidad, request.id_dispensacion
             )
 

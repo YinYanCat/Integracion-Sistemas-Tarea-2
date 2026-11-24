@@ -24,7 +24,10 @@ services:
 
   servicio-stock:
     build:
-      context: ./stock
+      # El Dockerfile genera los stubs gRPC desde contratos/stock.proto,
+      # por eso necesita el contexto completo del repositorio.
+      context: .
+      dockerfile: stock/Dockerfile
     volumes:
       - stock_data:/data
     environment:
