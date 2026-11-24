@@ -115,15 +115,20 @@ paths:
               $ref: "#/components/schemas/NuevaDispensacion"
       responses:
         "201":
-          description: Dispensación registrada y stock descontado
+          description: >
+            Resultado de la Saga. COMPLETADA confirma stock, receta y despacho;
+            PENDIENTE conserva la reserva para reanudar; COMPENSADA devolvió
+            el stock porque no se pudo crear el despacho.
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/Dispensacion"
+                $ref: "#/components/schemas/ResultadoSaga"
         "400":
           $ref: "#/components/responses/SolicitudInvalida"
         "401":
           $ref: "#/components/responses/NoAutenticado"
+        "429":
+          $ref: "#/components/responses/DemasiadasPeticiones"
         "404":
           description: El paciente indicado no existe
           content:
@@ -164,11 +169,14 @@ paths:
         - $ref: "#/components/parameters/IdDispensacion"
       responses:
         "200":
-          description: Dispensación encontrada
+          description: >
+            Agregación del BFF: estado de la Saga, medicamento desde Stock,
+            despacho y validación de receta. Una dependencia caída aparece
+            como objeto con `error`, no tumba la respuesta.
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/Dispensacion"
+                $ref: "#/components/schemas/AgregacionDispensacion"
         "401":
           $ref: "#/components/responses/NoAutenticado"
         "404":
@@ -252,6 +260,12 @@ components:
         application/json:
           schema:
             $ref: "#/components/schemas/ErrorEstandar"
+    DemasiadasPeticiones:
+      description: Se superó el límite de peticiones por cliente del Gateway.
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ErrorEstandar"
 
   schemas:
     NuevoPaciente:
@@ -281,6 +295,12 @@ components:
       type: object
       required: [paciente_id, codigo_medicamento, cantidad]
       properties:
+        id_dispensacion:
+          type: string
+          format: uuid
+          description: >
+            Clave de idempotencia de la Saga. Si se omite, el orquestador
+            genera un UUID. Reenviar el mismo valor no repite la operación.
         paciente_id:
           type: string
           format: uuid
@@ -311,6 +331,35 @@ components:
         fecha:
           type: string
           format: date-time
+
+    ResultadoSaga:
+      type: object
+      required: [id_dispensacion, estado]
+      properties:
+        id_dispensacion:
+          type: string
+        estado:
+          type: string
+          enum: [INICIADA, COMPLETADA, PENDIENTE, COMPENSADA, COMPENSACION_PENDIENTE, FALLIDA]
+        pasos_confirmados:
+          type: array
+          items:
+            type: string
+
+    AgregacionDispensacion:
+      type: object
+      properties:
+        saga:
+          $ref: "#/components/schemas/ResultadoSaga"
+        medicamento:
+          type: object
+          description: Respuesta de Stock, u objeto con `error` si falló.
+        despacho:
+          type: object
+          description: Respuesta de Despacho, u objeto con `error` si falló.
+        validacion_receta:
+          type: object
+          description: Historial de Receta, u objeto con `error` si falló.
 
     ErrorEstandar:
       type: object
