@@ -1,0 +1,3 @@
+﻿HTTP 201
+{"estado":"PENDIENTE","id_dispensacion":"E2E-R-LENTO-4","pasos_confirmados":["stock"]}
+

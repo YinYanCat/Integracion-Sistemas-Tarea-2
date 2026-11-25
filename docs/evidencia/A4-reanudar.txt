@@ -1,0 +1,2 @@
+﻿{"estado":"COMPLETADA","id_dispensacion":"E2E-BH-1","pasos_confirmados":["stock","receta","despacho"]}
+

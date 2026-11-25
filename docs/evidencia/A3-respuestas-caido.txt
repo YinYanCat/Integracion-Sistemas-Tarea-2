@@ -1,0 +1,4 @@
+﻿E2E-R-CAIDO-1|HTTP 201|{"estado":"PENDIENTE","id_dispensacion":"E2E-R-CAIDO-1","pasos_confirmados":["stock"]}
+
+E2E-R-CAIDO-2|HTTP 201|{"estado":"PENDIENTE","id_dispensacion":"E2E-R-CAIDO-2","pasos_confirmados":["stock"]}
+

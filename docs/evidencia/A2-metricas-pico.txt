@@ -1,0 +1,2 @@
+﻿{"receta":{"bulkhead":{"en_vuelo":0,"limite":4},"circuito":{"abierto_hace":0.6,"enfriamiento":5.0,"estado":"ABIERTO","fallos":4},"metricas":{"aperturas":2,"exitos":0,"fallbacks":5,"fallos":4,"llamadas":4,"rechazos_bulkhead":1,"timeouts":4}}}
+

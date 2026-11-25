@@ -1,0 +1,32 @@
+﻿== stock detenido ==
+docker :  Container integracion-sistemas-tarea-2-servicio-stock-1 Stopping 
+En línea: 8 Carácter: 13
++ $lineas += (docker compose -f docker-compose.yml -f $override stop se ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ( Container inte...ock-1 Stopping :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+ Container integracion-sistemas-tarea-2-servicio-stock-1 Stopped
+POST|ERROR|Error en el servidor remoto: (503) Servidor no disponible.
+== stock reiniciado ==
+docker :  Container integracion-sistemas-tarea-2-servicio-stock-1 Starting 
+En línea: 12 Carácter: 13
++ $lineas += (docker compose -f docker-compose.yml -f $override start s ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ( Container inte...ock-1 Starting :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+ Container integracion-sistemas-tarea-2-servicio-stock-1 Started
+== esperando healthy ==
+NAME                                            IMAGE                                         COMMAND              SERVICE          CREATED          STATUS                    PORTS
+integracion-sistemas-tarea-2-servicio-stock-1   integracion-sistemas-tarea-2-servicio-stock   "python server.py"   servicio-stock   45 minutes ago   Up 11 seconds (healthy)   8101/tcp
+POST /reanudar/E2E-STOCK-CAIDO -> {"estado":"COMPLETADA","id_dispensacion":"E2E-STOCK-CAIDO","pasos_confirmados":["stock","receta","despacho"]}
+GET /admin/resiliencia -> {"receta":{"bulkhead":{"en_vuelo":0,"limite":4},"circuito":{"abierto_hace":0.0,"enfriamiento":5.0,"estado":"CERRADO","fallos":0},"metricas":{"aperturas":0,"exitos":1,"fallbacks":0,"fallos":0,"llamadas":1,"rechazos_bulkhead":0,"timeouts":0}}}
+== estado final contenedores ==
+NAME                                               IMAGE                                                                     COMMAND              SERVICE             CREATED             STATUS                       PORTS
+integracion-sistemas-tarea-2-bff-web-1             integracion-sistemas-tarea-2-bff-web                                      "python app.py"      bff-web             45 minutes ago      Up 45 minutes (healthy)      8090/tcp
+integracion-sistemas-tarea-2-gateway-1             integracion-sistemas-tarea-2-gateway                                      "python app.py"      gateway             45 minutes ago      Up 44 minutes (healthy)      0.0.0.0:8081->8080/tcp, [::]:8081->8080/tcp
+integracion-sistemas-tarea-2-orquestador-1         integracion-sistemas-tarea-2-orquestador                                  "python app.py"      orquestador         16 minutes ago      Up 16 minutes (healthy)      8104/tcp
+integracion-sistemas-tarea-2-servicio-despacho-1   sha256:d99dd0afc9244c9a65861ae79e83308603b312443e0de98b208ab0367dcaa6ef   "python app.py"      servicio-despacho   About an hour ago   Up About an hour (healthy)   8102/tcp
+integracion-sistemas-tarea-2-servicio-receta-1     sha256:c0cdde9365e18dbc27ec1aa04ea3a8c1e1072ad154106419b0daadd26ecda0e5   "python app.py"      servicio-receta     About an hour ago   Up About an hour (healthy)   8103/tcp
+integracion-sistemas-tarea-2-servicio-stock-1      integracion-sistemas-tarea-2-servicio-stock                               "python server.py"   servicio-stock      46 minutes ago      Up 18 seconds (healthy)      8101/tcp

@@ -1,0 +1,10 @@
+﻿E2E-BH-1|HTTP 201|{"estado":"PENDIENTE","id_dispensacion":"E2E-BH-1","pasos_confirmados":["stock"]}
+
+E2E-BH-2|HTTP 201|{"estado":"PENDIENTE","id_dispensacion":"E2E-BH-2","pasos_confirmados":["stock"]}
+
+E2E-BH-3|HTTP 201|{"estado":"PENDIENTE","id_dispensacion":"E2E-BH-3","pasos_confirmados":["stock"]}
+
+E2E-BH-4|HTTP 201|{"estado":"PENDIENTE","id_dispensacion":"E2E-BH-4","pasos_confirmados":["stock"]}
+
+E2E-BH-5|HTTP 201|{"estado":"PENDIENTE","id_dispensacion":"E2E-BH-5","pasos_confirmados":["stock"]}
+

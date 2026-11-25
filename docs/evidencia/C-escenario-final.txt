@@ -1,0 +1,29 @@
+﻿== Escenario C: stock gRPC detenido (API interna del orquestador) ==
+docker :  Container integracion-sistemas-tarea-2-servicio-stock-1 Stopping 
+En línea: 5 Carácter: 13
++ $lineas += (docker compose -f docker-compose.yml -f $override stop se ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ( Container inte...ock-1 Stopping :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+ Container integracion-sistemas-tarea-2-servicio-stock-1 Stopped
+POST /despachar -> {"estado":"PENDIENTE","id_dispensacion":"E2E-STOCK-CAIDO-3","pasos_confirmados":[]}
+GET /estado/E2E-STOCK-CAIDO-3 -> {"estado":"PENDIENTE","id_dispensacion":"E2E-STOCK-CAIDO-3","pasos_confirmados":[],"payload":{"cantidad":1,"codigo_medicamento":"MED-1","id_dispensacion":"E2E-STOCK-CAIDO-3","paciente_id":"PAC-E2E"}}
+docker :  Container integracion-sistemas-tarea-2-servicio-stock-1 Starting 
+En línea: 15 Carácter: 13
++ $lineas += (docker compose -f docker-compose.yml -f $override start s ...
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ( Container inte...ock-1 Starting :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+ Container integracion-sistemas-tarea-2-servicio-stock-1 Started
+POST /reanudar/E2E-STOCK-CAIDO-3 -> {"estado":"COMPLETADA","id_dispensacion":"E2E-STOCK-CAIDO-3","pasos_confirmados":["stock","receta","despacho"]}
+GET /estado/E2E-STOCK-CAIDO-3 final -> {"estado":"COMPLETADA","id_dispensacion":"E2E-STOCK-CAIDO-3","pasos_confirmados":["stock","receta","despacho"],"payload":{"cantidad":1,"codigo_medicamento":"MED-1","id_dispensacion":"E2E-STOCK-CAIDO-3","paciente_id":"PAC-E2E"}}
+== ps final ==
+SERVICE             STATUS
+bff-web             Up 47 minutes (healthy)
+gateway             Up 46 minutes (healthy)
+orquestador         Up 17 minutes (healthy)
+servicio-despacho   Up About an hour (healthy)
+servicio-receta     Up About an hour (healthy)
+servicio-stock      Up 7 seconds (healthy)

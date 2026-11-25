@@ -1,0 +1,828 @@
+﻿servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:22:43] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:21:38,967 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:21:38] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:22:48] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:21:44,170 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:21:44] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:28:56,802 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:28:56] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:21:32,961 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:21:32] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:21:49,382 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:21:49] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:22:53] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:22:58] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:23:03] "GET /salud HTTP/1.1" 200 -
+servicio-stock-1     | 2026-11-24 03:49:42,313 INFO stock_server: Base de datos de Stock inicializada en /data/stock.db
+servicio-stock-1     | 2026-11-24 03:49:42,330 INFO stock_server: Servicio de Stock (gRPC) escuchando en [::]:8101
+servicio-stock-1     | 2026-11-24 03:50:12,670 INFO stock_service: Descontar tx=55555555-5555-4555-8555-555555555555 codigo=MED-1 cantidad=2 exito=True mensaje=ok
+gateway-1            | 2026-11-24 04:21:38,124 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:21:38] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:21:43,295 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:21:43] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:21:48,500 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:21:48] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:21:53,685 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:21:53] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:29:02,018 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:29:02] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:21:58,911 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:21:58] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:22:04,106 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:22:04] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:22:09,270 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:22:09] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:22:14,509 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:22:14] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:23:09] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:23:14] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:23:19] "GET /salud HTTP/1.1" 200 -
+servicio-stock-1     | 2026-11-24 03:50:31,159 INFO stock_service: Descontar tx=66666666-6666-4666-8666-666666666666 codigo=MED-1 cantidad=2 exito=True mensaje=ok
+servicio-stock-1     | 2026-11-24 03:50:31,211 INFO stock_service: Reponer tx=66666666-6666-4666-8666-666666666666 codigo=MED-1 cantidad=2 exito=True mensaje=ok
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:23:24] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:23:29] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:23:34] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:23:40] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:23:45] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:23:50] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:23:55] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:24:00] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:24:05] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:24:11] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:24:16] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:24:21] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:24:26] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:24:31] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:24:36] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:24:42] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:24:47] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:24:52] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:24:57] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:25:02] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:25:07] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:25:13] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:25:18] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:25:23] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:25:28] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:25:33] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:25:38] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:25:44] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:25:49] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:25:54] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:25:59] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:26:04] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:26:10] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:26:15] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:26:20] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:26:25] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:26:30] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:26:36] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:26:41] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:26:46] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:26:51] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:26:56] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:27:01] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:27:07] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:27:12] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:22:19,730 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:22:19] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:22:24,905 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:22:24] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:22:30,077 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:22:30] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:22:35,260 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:22:35] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:22:40,432 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:22:40] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:22:45,631 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:22:45] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:27:17] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:27:22] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:27:27] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:27:33] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:27:38] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:27:43] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:27:48] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:21:54,606 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:21:54] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:21:59,887 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:21:59] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:22:05,107 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:22:05] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:22:10,346 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:22:10] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:22:15,565 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:22:15] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:22:20,891 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:22:20] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:22:26,185 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:22:26] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:22:31,389 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:22:31] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:22:36,594 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:22:36] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:22:50,841 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:22:50] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:22:56,061 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:22:56] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:23:01,239 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:23:01] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:23:06,401 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:23:06] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:27:53] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:27:58] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:28:04] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:28:09] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:22:41,882 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:22:41] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:22:47,087 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:22:47] "GET /salud HTTP/1.1" 200 -
+servicio-stock-1     | 2026-11-24 03:51:07,406 INFO stock_service: Descontar tx=77777777-7777-4777-8777-777777777777 codigo=MED-1 cantidad=2 exito=True mensaje=ok
+servicio-stock-1     | 2026-11-24 04:32:14,269 INFO stock_service: Descontar tx=E2E-R-LENTO-2 codigo=MED-1 cantidad=1 exito=True mensaje=ok
+servicio-stock-1     | 2026-11-24 04:32:14,314 INFO stock_service: Descontar tx=E2E-R-LENTO-1 codigo=MED-1 cantidad=1 exito=True mensaje=ok
+servicio-stock-1     | 2026-11-24 04:32:14,462 INFO stock_service: Descontar tx=E2E-R-LENTO-3 codigo=MED-1 cantidad=1 exito=True mensaje=ok
+gateway-1            | 2026-11-24 04:23:11,611 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:23:11] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:23:16,774 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:23:16] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:23:21,943 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:23:21] "GET /salud HTTP/1.1" 200 -
+servicio-stock-1     | 2026-11-24 04:32:15,095 INFO stock_service: Descontar tx=E2E-R-LENTO-4 codigo=MED-1 cantidad=1 exito=True mensaje=ok
+servicio-stock-1     | 2026-11-24 04:32:16,310 INFO stock_service: Descontar tx=E2E-R-LENTO-5 codigo=MED-1 cantidad=1 exito=True mensaje=ok
+servicio-stock-1     | 2026-11-24 04:33:29,568 INFO stock_service: Descontar tx=E2E-BH-1 codigo=MED-1 cantidad=1 exito=True mensaje=ok
+servicio-stock-1     | 2026-11-24 04:33:29,581 INFO stock_service: Descontar tx=E2E-BH-2 codigo=MED-1 cantidad=1 exito=True mensaje=ok
+orquestador-1        | 2026-11-24 04:29:07,208 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:29:07] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:28:14] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:28:20] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:28:25] "GET /salud HTTP/1.1" 200 -
+servicio-stock-1     | 2026-11-24 04:33:29,596 INFO stock_service: Descontar tx=E2E-BH-3 codigo=MED-1 cantidad=1 exito=True mensaje=ok
+servicio-stock-1     | 2026-11-24 04:33:29,613 INFO stock_service: Descontar tx=E2E-BH-5 codigo=MED-1 cantidad=1 exito=True mensaje=ok
+servicio-stock-1     | 2026-11-24 04:33:29,643 INFO stock_service: Descontar tx=E2E-BH-4 codigo=MED-1 cantidad=1 exito=True mensaje=ok
+gateway-1            | 2026-11-24 04:23:27,109 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:23:27] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:23:32,306 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:23:32] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:28:30] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:28:35] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:28:41] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:28:46] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:28:51] "GET /salud HTTP/1.1" 200 -
+servicio-stock-1     | 2026-11-24 04:33:54,813 INFO stock_service: Descontar tx=E2E-R-CAIDO-1 codigo=MED-1 cantidad=1 exito=True mensaje=ok
+servicio-stock-1     | 2026-11-24 04:33:54,930 INFO stock_service: Descontar tx=E2E-R-CAIDO-2 codigo=MED-1 cantidad=1 exito=True mensaje=ok
+servicio-stock-1     | 2026-11-24 04:34:39,384 INFO stock_service: Descontar tx=E2E-DESPACHO-CAIDO codigo=MED-1 cantidad=1 exito=True mensaje=ok
+servicio-stock-1     | 2026-11-24 04:34:39,428 INFO stock_service: Reponer tx=E2E-DESPACHO-CAIDO codigo=MED-1 cantidad=1 exito=True mensaje=ok
+gateway-1            | 2026-11-24 04:23:37,466 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:23:37] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:23:42,620 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:23:42] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:23:47,781 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:23:47] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:22:52,303 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:22:52] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:22:57,512 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:22:57] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:23:02,762 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:23:02] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:23:07,970 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:23:07] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:23:13,172 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:23:13] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:23:18,368 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:23:18] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:23:23,589 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:23:23] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:23:28,787 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:23:28] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:23:33,977 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:23:33] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:23:39,187 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:23:39] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:23:44,403 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:23:44] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:23:49,594 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:23:49] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:23:54,772 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:23:54] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:23:59,962 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:23:59] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:24:05,166 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:24:05] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:23:52,947 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:23:52] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:23:58,095 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:23:58] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:24:03,243 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:24:03] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:24:08,390 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:24:08] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:24:13,551 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:24:13] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:24:18,707 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:24:18] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:24:10,350 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:24:10] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:24:15,522 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:24:15] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:24:20,725 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:24:20] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:29:12,377 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:29:12] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:29:17,547 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:29:17] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:29:22,772 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:29:22] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:29:27,993 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:29:27] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:29:33,201 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:29:33] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:29:38,371 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:29:38] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:29:43,527 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:29:43] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:24:23,855 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:24:23] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:24:29,007 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:24:29] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:29:48,718 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:29:48] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:29:53,878 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:29:53] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:29:59,031 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:29:59] "GET /salud HTTP/1.1" 200 -
+servicio-stock-1     | 2026-11-24 04:35:12,756 INFO stock_server: Base de datos de Stock inicializada en /data/stock.db
+servicio-stock-1     | 2026-11-24 04:35:12,803 INFO stock_server: Servicio de Stock (gRPC) escuchando en [::]:8101
+orquestador-1        | 2026-11-24 04:30:04,231 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:30:04] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:30:09,390 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:30:09] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:30:14,573 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:30:14] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:24:34,201 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:24:34] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:24:39,360 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:24:39] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:24:44,531 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:24:44] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:30:19,731 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:30:19] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:30:24,912 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:30:24] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:28:56] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:29:01] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:24:49,677 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:24:49] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:24:54,857 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:24:54] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:25:00,016 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:25:00] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:25:05,186 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:25:05] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:30:30,076 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:30:30] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:30:35,232 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:30:35] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:25:10,328 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:25:10] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:25:15,502 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:25:15] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:25:20,677 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:25:20] "GET /salud HTTP/1.1" 200 -
+servicio-stock-1     | 2026-11-24 04:35:29,535 INFO stock_service: Descontar tx=E2E-STOCK-CAIDO codigo=MED-1 cantidad=1 exito=True mensaje=ok
+servicio-stock-1     | 2026-11-24 04:35:49,322 INFO stock_server: Base de datos de Stock inicializada en /data/stock.db
+servicio-stock-1     | 2026-11-24 04:35:49,335 INFO stock_server: Servicio de Stock (gRPC) escuchando en [::]:8101
+servicio-stock-1     | 2026-11-24 04:36:51,449 INFO stock_server: Base de datos de Stock inicializada en /data/stock.db
+servicio-stock-1     | 2026-11-24 04:36:51,459 INFO stock_server: Servicio de Stock (gRPC) escuchando en [::]:8101
+orquestador-1        | 2026-11-24 04:30:40,390 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:30:40] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:29:07] "GET /salud HTTP/1.1" 200 -
+servicio-stock-1     | 2026-11-24 04:36:57,784 INFO stock_service: Descontar tx=E2E-STOCK-CAIDO-3 codigo=MED-1 cantidad=1 exito=True mensaje=ok
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:29:12] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:24:25,914 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:24:25] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:24:31,140 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:24:31] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:24:36,329 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:24:36] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:24:41,543 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:24:41] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:24:46,715 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:24:46] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:24:51,885 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:24:51] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:24:57,042 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:24:57] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:25:25,842 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:25:25] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:30:45,551 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:30:45] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:30:50,739 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:30:50] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:30:55,899 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:30:55] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:25:02,209 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:25:02] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:25:07,361 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:25:07] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:25:12,506 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:25:12] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:29:17] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:31:01,081 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:31:01] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:29:22] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:31:06,273 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:31:06] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:29:27] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:31:11,449 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:31:11] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:31:16,676 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:31:16] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:25:31,024 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:25:31] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:25:36,210 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:25:36] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:25:41,367 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:25:41] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:25:17,640 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:25:17] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:25:22,810 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:25:22] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:25:27,962 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:25:27] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:25:33,110 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:25:33] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:31:21,862 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:31:21] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:31:27,106 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:31:27] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:31:32,430 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:31:32] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:29:33] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:31:37,708 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:31:37] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:31:41,428 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:31:41] "GET /admin/resiliencia HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:31:42,886 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:31:42] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:29:38] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:29:43] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:29:48] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:25:38,294 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:25:38] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:25:43,456 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:25:43] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:25:48,617 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:25:48] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:29:53] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:29:59] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:30:04] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:30:09] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:31:48,066 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:31:48] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:31:53,320 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:31:53] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:31:58,541 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:31:58] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:30:14] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:30:19] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:30:24] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:30:30] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:30:35] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:25:46,547 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:25:46] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:25:51,701 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:25:51] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:30:40] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:30:45] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:30:50] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:25:53,790 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:25:53] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:25:56,860 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:25:56] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:26:02,024 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:26:02] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:26:07,179 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:26:07] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:26:12,333 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:26:12] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:26:17,490 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:26:17] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:26:22,677 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:26:22] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:25:58,965 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:25:58] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:26:04,121 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:26:04] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:26:09,303 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:26:09] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:26:14,477 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:26:14] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:26:19,638 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:26:19] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:26:24,793 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:26:24] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:26:29,978 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:26:29] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:26:35,140 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:26:35] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:32:03,733 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:32:03] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:32:08,992 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:32:08] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:32:10,324 INFO orquestador: Contadores y circuito de resiliencia reiniciados
+orquestador-1        | 2026-11-24 04:32:10,324 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:32:10] "POST /admin/resiliencia/reset HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:30:55] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:32:14,177 INFO orquestador: Iniciando Saga tx=E2E-R-LENTO-2
+orquestador-1        | 2026-11-24 04:32:14,180 INFO orquestador: Iniciando Saga tx=E2E-R-LENTO-1
+servicio-despacho-1  | 2026-11-24 04:26:40,316 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:26:40] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:26:45,479 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:26:45] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:26:50,647 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:26:50] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:32:14,280 INFO saga: Saga tx=E2E-R-LENTO-2: stock reservado
+orquestador-1        | 2026-11-24 04:32:14,315 INFO saga: Saga tx=E2E-R-LENTO-1: stock reservado
+orquestador-1        | 2026-11-24 04:32:14,402 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:32:14] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:31:01] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:31:06] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:31:11] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:31:16] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:31:21] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:31:27] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:31:32] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:26:55,809 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:26:55] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:27:00,975 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:27:00] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:31:37] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:31:42] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:32:14,415 INFO orquestador: Iniciando Saga tx=E2E-R-LENTO-3
+orquestador-1        | 2026-11-24 04:32:14,464 INFO saga: Saga tx=E2E-R-LENTO-3: stock reservado
+orquestador-1        | 2026-11-24 04:32:14,896 INFO orquestador: Iniciando Saga tx=E2E-R-LENTO-4
+orquestador-1        | 2026-11-24 04:32:15,096 INFO saga: Saga tx=E2E-R-LENTO-4: stock reservado
+orquestador-1        | 2026-11-24 04:32:15,848 INFO orquestador: Iniciando Saga tx=E2E-R-LENTO-5
+gateway-1            | 2026-11-24 04:26:27,879 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:26:27] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:32:16,302 WARNING resiliencia: Resiliencia tx=E2E-R-LENTO-2: fallback (HTTPConnectionPool(host='servicio-receta', port=8103): Read timed out. (read timeout=2)), circuito=CERRADO
+orquestador-1        | 2026-11-24 04:32:16,311 INFO saga: Saga tx=E2E-R-LENTO-5: stock reservado
+gateway-1            | 2026-11-24 04:26:33,057 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:26:33] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:31:48] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:27:06,135 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:27:06] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:26:38,244 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:26:38] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:26:43,451 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:26:43] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:32:16,321 WARNING resiliencia: Resiliencia tx=E2E-R-LENTO-1: fallback (HTTPConnectionPool(host='servicio-receta', port=8103): Read timed out. (read timeout=2)), circuito=CERRADO
+servicio-despacho-1  | 2026-11-24 04:27:11,324 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:27:11] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:27:16,496 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:27:16] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:27:21,653 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:27:21] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:26:48,610 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:26:48] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:26:53,762 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:26:53] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:27:26,788 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:27:26] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:27:31,991 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:27:31] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:27:37,148 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:27:37] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:27:42,285 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:27:42] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:27:47,431 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:27:47] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:31:53] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:31:58] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:32:03] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:32:08] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:32:11] "POST /admin/modo/normal HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:27:52,574 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:27:52] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:27:57,707 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:27:57] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:32:12] "POST /admin/modo/lento HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:32:14] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | Simulaci├│n de lentitud: sleep de 5 segundos...
+orquestador-1        | 2026-11-24 04:32:16,412 INFO orquestador: Saga tx=E2E-R-LENTO-2 termin├│ en PENDIENTE
+orquestador-1        | 2026-11-24 04:32:16,412 INFO werkzeug: 172.18.0.6 - - [24/Nov/2026 04:32:16] "[35m[1mPOST /despachar HTTP/1.1[0m" 201 -
+orquestador-1        | 2026-11-24 04:32:16,470 WARNING resiliencia: Resiliencia tx=E2E-R-LENTO-3: fallback (HTTPConnectionPool(host='servicio-receta', port=8103): Read timed out. (read timeout=2)), circuito=ABIERTO
+orquestador-1        | 2026-11-24 04:32:16,482 INFO orquestador: Saga tx=E2E-R-LENTO-1 termin├│ en PENDIENTE
+gateway-1            | 2026-11-24 04:26:58,919 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:26:58] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:27:04,086 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:27:04] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:27:09,363 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:27:09] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | Simulaci├│n de lentitud: sleep de 5 segundos...
+gateway-1            | 2026-11-24 04:27:14,579 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:27:14] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:32:16,483 INFO werkzeug: 172.18.0.6 - - [24/Nov/2026 04:32:16] "[35m[1mPOST /despachar HTTP/1.1[0m" 201 -
+orquestador-1        | 2026-11-24 04:32:16,554 INFO orquestador: Saga tx=E2E-R-LENTO-3 termin├│ en PENDIENTE
+orquestador-1        | 2026-11-24 04:32:16,554 INFO werkzeug: 172.18.0.6 - - [24/Nov/2026 04:32:16] "[35m[1mPOST /despachar HTTP/1.1[0m" 201 -
+servicio-receta-1    | Simulaci├│n de lentitud: sleep de 5 segundos...
+servicio-receta-1    | Simulaci├│n de lentitud: sleep de 5 segundos...
+servicio-receta-1    | Simulaci├│n de lentitud: sleep de 5 segundos...
+servicio-receta-1    | 172.18.0.5 - - [24/Nov/2026 04:32:19] "POST /ejecutar HTTP/1.1" 200 -
+servicio-receta-1    | 172.18.0.5 - - [24/Nov/2026 04:32:19] "POST /ejecutar HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:28:02,854 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:28:02] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:28:08,007 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:28:08] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:28:13,266 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:28:13] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:28:18,571 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:28:18] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:28:23,745 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:28:23] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:28:28,908 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:28:28] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:28:34,047 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:28:34] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:27:19,761 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:27:19] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:27:24,914 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:27:24] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:27:30,104 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:27:30] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 172.18.0.5 - - [24/Nov/2026 04:32:19] "POST /ejecutar HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:32:19] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:32:17,102 WARNING resiliencia: Resiliencia tx=E2E-R-LENTO-4: fallback (HTTPConnectionPool(host='servicio-receta', port=8103): Read timed out. (read timeout=2)), circuito=ABIERTO
+orquestador-1        | 2026-11-24 04:32:17,171 INFO orquestador: Saga tx=E2E-R-LENTO-4 termin├│ en PENDIENTE
+orquestador-1        | 2026-11-24 04:32:17,171 INFO werkzeug: 172.18.0.6 - - [24/Nov/2026 04:32:17] "[35m[1mPOST /despachar HTTP/1.1[0m" 201 -
+servicio-despacho-1  | 2026-11-24 04:28:39,198 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:28:39] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:28:44,340 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:28:44] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:28:49,472 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:28:49] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:32:18,316 WARNING resiliencia: Resiliencia tx=E2E-R-LENTO-5: fallback (HTTPConnectionPool(host='servicio-receta', port=8103): Read timed out. (read timeout=2)), circuito=ABIERTO
+orquestador-1        | 2026-11-24 04:32:18,339 INFO orquestador: Saga tx=E2E-R-LENTO-5 termin├│ en PENDIENTE
+orquestador-1        | 2026-11-24 04:32:18,339 INFO werkzeug: 172.18.0.6 - - [24/Nov/2026 04:32:18] "[35m[1mPOST /despachar HTTP/1.1[0m" 201 -
+gateway-1            | 2026-11-24 04:27:35,256 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:27:35] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:32:19,940 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:32:19] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:27:40,424 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:27:40] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:28:54,609 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:28:54] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:27:45,558 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:27:45] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:28:59,751 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:28:59] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:27:50,714 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:27:50] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:29:04,899 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:29:04] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:32:22,535 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:32:22] "GET /admin/resiliencia HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:32:25,173 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:32:25] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:32:30,380 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:32:30] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:27:55,873 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:27:55] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:28:01,019 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:28:01] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:28:06,315 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:28:06] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:28:11,537 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:28:11] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:28:16,838 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:28:16] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:29:10,067 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:29:10] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:29:15,313 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:29:15] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:29:20,496 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:29:20] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:29:25,627 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:29:25] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:29:30,761 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:29:30] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:29:35,894 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:29:35] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:32:35,567 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:32:35] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:32:40,713 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:32:40] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:32:45,868 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:32:45] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:32:51,082 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:32:51] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 172.18.0.5 - - [24/Nov/2026 04:32:20] "POST /ejecutar HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:29:41,029 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:29:41] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:29:46,274 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:29:46] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:29:51,436 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:29:51] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:32:56,265 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:32:56] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:29:56,575 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:29:56] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 172.18.0.5 - - [24/Nov/2026 04:32:21] "POST /ejecutar HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:28:22,072 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:28:22] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:28:27,232 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:28:27] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:28:32,365 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:28:32] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:28:37,511 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:28:37] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:28:42,675 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:28:42] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:28:47,813 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:28:47] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:28:52,952 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:28:52] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:30:01,730 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:30:01] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:28:58,094 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:28:58] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:29:03,226 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:29:03] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:29:08,379 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:29:08] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:29:13,555 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:29:13] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:29:18,696 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:29:18] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:29:23,844 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:29:23] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:33:01,429 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:33:01] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:29:28,992 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:29:28] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:30:06,862 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:30:06] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:30:12,023 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:30:12] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:30:17,183 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:30:17] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:30:22,327 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:30:22] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:29:34,142 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:29:34] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:33:06,575 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:33:06] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:33:11,730 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:33:11] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:33:16,917 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:33:16] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:33:22,232 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:33:22] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:33:27,453 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:33:27] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:33:27,959 INFO orquestador: Contadores y circuito de resiliencia reiniciados
+orquestador-1        | 2026-11-24 04:33:27,959 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:33:27] "POST /admin/resiliencia/reset HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:33:29,539 INFO orquestador: Iniciando Saga tx=E2E-BH-1
+orquestador-1        | 2026-11-24 04:33:29,542 INFO orquestador: Iniciando Saga tx=E2E-BH-4
+orquestador-1        | 2026-11-24 04:33:29,547 INFO orquestador: Iniciando Saga tx=E2E-BH-5
+orquestador-1        | 2026-11-24 04:33:29,549 INFO orquestador: Iniciando Saga tx=E2E-BH-3
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:32:24] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:32:30] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:32:35] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:32:40] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:32:45] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:32:50] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:32:56] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:33:01] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:33:06] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:29:39,295 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:29:39] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:33:11] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:29:44,457 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:29:44] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:33:16] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:30:27,461 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:30:27] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:30:32,601 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:30:32] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:30:37,756 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:30:37] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:30:42,896 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:30:42] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:33:29,552 INFO orquestador: Iniciando Saga tx=E2E-BH-2
+servicio-despacho-1  | 2026-11-24 04:30:48,038 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:30:48] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:30:53,184 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:30:53] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:29:49,606 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:29:49] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:33:29,570 INFO saga: Saga tx=E2E-BH-1: stock reservado
+gateway-1            | 2026-11-24 04:29:54,748 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:29:54] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:29:59,883 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:29:59] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:30:05,070 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:30:05] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:33:21] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:33:27] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:33:28] "POST /admin/modo/lento HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:30:10,231 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:30:10] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:30:15,361 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:30:15] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:30:58,328 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:30:58] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:31:03,481 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:31:03] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:31:08,644 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:31:08] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:33:29,582 INFO saga: Saga tx=E2E-BH-2: stock reservado
+orquestador-1        | 2026-11-24 04:33:29,597 INFO saga: Saga tx=E2E-BH-3: stock reservado
+servicio-despacho-1  | 2026-11-24 04:31:13,786 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:31:13] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:31:19,068 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:31:19] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:31:24,286 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:31:24] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | Simulaci├│n de lentitud: sleep de 5 segundos...
+servicio-receta-1    | Simulaci├│n de lentitud: sleep de 5 segundos...
+servicio-receta-1    | Simulaci├│n de lentitud: sleep de 5 segundos...
+servicio-receta-1    | Simulaci├│n de lentitud: sleep de 5 segundos...
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:33:32] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 172.18.0.5 - - [24/Nov/2026 04:33:34] "POST /ejecutar HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:33:29,614 INFO saga: Saga tx=E2E-BH-5: stock reservado
+orquestador-1        | 2026-11-24 04:33:29,644 INFO saga: Saga tx=E2E-BH-4: stock reservado
+orquestador-1        | 2026-11-24 04:33:29,644 WARNING resiliencia: Resiliencia tx=E2E-BH-4: fallback (bulkhead lleno), circuito=CERRADO, en_vuelo=4
+orquestador-1        | 2026-11-24 04:33:29,656 INFO orquestador: Saga tx=E2E-BH-4 termin├│ en PENDIENTE
+servicio-receta-1    | 172.18.0.5 - - [24/Nov/2026 04:33:34] "POST /ejecutar HTTP/1.1" 200 -
+servicio-receta-1    | 172.18.0.5 - - [24/Nov/2026 04:33:34] "POST /ejecutar HTTP/1.1" 200 -
+servicio-receta-1    | 172.18.0.5 - - [24/Nov/2026 04:33:34] "POST /ejecutar HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:33:37] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:33:42] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:33:29,657 INFO werkzeug: 172.18.0.6 - - [24/Nov/2026 04:33:29] "[35m[1mPOST /despachar HTTP/1.1[0m" 201 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:33:47] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:33:53] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:33:54] "POST /admin/modo/caido HTTP/1.1" 200 -
+servicio-receta-1    | Simulaci├│n de ca├¡da: El servicio de recetas no responde (HTTP 500)
+orquestador-1        | 2026-11-24 04:33:31,575 WARNING resiliencia: Resiliencia tx=E2E-BH-1: fallback (HTTPConnectionPool(host='servicio-receta', port=8103): Read timed out. (read timeout=2)), circuito=CERRADO
+orquestador-1        | 2026-11-24 04:33:31,586 INFO orquestador: Saga tx=E2E-BH-1 termin├│ en PENDIENTE
+orquestador-1        | 2026-11-24 04:33:31,586 INFO werkzeug: 172.18.0.6 - - [24/Nov/2026 04:33:31] "[35m[1mPOST /despachar HTTP/1.1[0m" 201 -
+orquestador-1        | 2026-11-24 04:33:31,588 WARNING resiliencia: Resiliencia tx=E2E-BH-2: fallback (HTTPConnectionPool(host='servicio-receta', port=8103): Read timed out. (read timeout=2)), circuito=CERRADO
+orquestador-1        | 2026-11-24 04:33:31,601 WARNING resiliencia: Resiliencia tx=E2E-BH-3: fallback (HTTPConnectionPool(host='servicio-receta', port=8103): Read timed out. (read timeout=2)), circuito=ABIERTO
+servicio-receta-1    | 172.18.0.5 - - [24/Nov/2026 04:33:54] "[35m[1mPOST /ejecutar HTTP/1.1[0m" 500 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:33:58] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:34:03] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:34:08] "POST /admin/modo/normal HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:34:08] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:34:13] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 172.18.0.5 - - [24/Nov/2026 04:34:15] "POST /ejecutar HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:33:31,602 INFO orquestador: Saga tx=E2E-BH-2 termin├│ en PENDIENTE
+gateway-1            | 2026-11-24 04:30:20,502 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:30:20] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:30:25,647 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:30:25] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:30:30,792 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:30:30] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:30:35,927 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:30:35] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:30:41,062 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:30:41] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:30:46,194 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:30:46] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:30:51,332 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:30:51] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:30:56,626 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:30:56] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:31:01,788 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:31:01] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:31:29,463 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:31:29] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:31:06,935 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:31:06] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:31:12,085 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:31:12] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:33:31,603 INFO werkzeug: 172.18.0.6 - - [24/Nov/2026 04:33:31] "[35m[1mPOST /despachar HTTP/1.1[0m" 201 -
+servicio-despacho-1  | 2026-11-24 04:31:34,620 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:31:34] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:34:19] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:31:17,245 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:31:17] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:31:22,451 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:31:22] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:31:27,668 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:31:27] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:31:39,779 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:31:39] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:31:44,934 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:31:44] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:31:50,109 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:31:50] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:31:55,265 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:31:55] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:32:00,441 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:32:00] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:31:32,899 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:31:32] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:31:38,058 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:31:38] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:31:43,196 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:31:43] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:33:31,617 INFO orquestador: Saga tx=E2E-BH-3 termin├│ en PENDIENTE
+orquestador-1        | 2026-11-24 04:33:31,618 INFO werkzeug: 172.18.0.6 - - [24/Nov/2026 04:33:31] "[35m[1mPOST /despachar HTTP/1.1[0m" 201 -
+orquestador-1        | 2026-11-24 04:33:31,621 WARNING resiliencia: Resiliencia tx=E2E-BH-5: fallback (HTTPConnectionPool(host='servicio-receta', port=8103): Read timed out. (read timeout=2)), circuito=ABIERTO
+orquestador-1        | 2026-11-24 04:33:31,632 INFO orquestador: Saga tx=E2E-BH-5 termin├│ en PENDIENTE
+orquestador-1        | 2026-11-24 04:33:31,633 INFO werkzeug: 172.18.0.6 - - [24/Nov/2026 04:33:31] "[35m[1mPOST /despachar HTTP/1.1[0m" 201 -
+servicio-despacho-1  | 2026-11-24 04:32:05,604 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:32:05] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:32:10,891 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:32:10] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:33:32,221 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:33:32] "GET /admin/resiliencia HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:33:32,707 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:33:32] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:33:37,888 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:33:37] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:33:43,066 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:33:43] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:33:48,265 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:33:48] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:33:53,436 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:33:53] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:33:54,791 INFO orquestador: Iniciando Saga tx=E2E-R-CAIDO-1
+gateway-1            | 2026-11-24 04:31:48,363 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:31:48] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:33:54,814 INFO saga: Saga tx=E2E-R-CAIDO-1: stock reservado
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:34:24] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:34:29] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:34:34] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 172.18.0.5 - - [24/Nov/2026 04:34:39] "POST /ejecutar HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:33:54,822 WARNING resiliencia: Resiliencia tx=E2E-R-CAIDO-1: fallback (respuesta inv├ílida status=500), circuito=ABIERTO
+orquestador-1        | 2026-11-24 04:33:54,832 INFO orquestador: Saga tx=E2E-R-CAIDO-1 termin├│ en PENDIENTE
+servicio-receta-1    | 172.18.0.6 - - [24/Nov/2026 04:34:39] "GET /estado HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:34:39] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:32:11,541 INFO despacho_service: Modo de falla del despacho cambiado a normal
+orquestador-1        | 2026-11-24 04:33:54,832 INFO werkzeug: 172.18.0.6 - - [24/Nov/2026 04:33:54] "[35m[1mPOST /despachar HTTP/1.1[0m" 201 -
+orquestador-1        | 2026-11-24 04:33:54,905 INFO orquestador: Iniciando Saga tx=E2E-R-CAIDO-2
+orquestador-1        | 2026-11-24 04:33:54,931 INFO saga: Saga tx=E2E-R-CAIDO-2: stock reservado
+gateway-1            | 2026-11-24 04:31:53,544 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:31:53] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:31:58,717 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:31:58] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:32:03,901 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:32:03] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:32:09,176 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:32:09] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:32:14,499 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:32:14] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:32:11,541 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:32:11] "POST /admin/modo/normal HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:32:16,441 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:32:16] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:32:16,430 INFO werkzeug: 172.18.0.1 - - [24/Nov/2026 04:32:16] "[35m[1mPOST /v1/dispensaciones HTTP/1.1[0m" 201 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:34:45] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:32:16,487 INFO werkzeug: 172.18.0.1 - - [24/Nov/2026 04:32:16] "[35m[1mPOST /v1/dispensaciones HTTP/1.1[0m" 201 -
+orquestador-1        | 2026-11-24 04:33:54,931 WARNING resiliencia: Resiliencia tx=E2E-R-CAIDO-2: fallback (circuito_abierto), circuito=ABIERTO
+orquestador-1        | 2026-11-24 04:33:54,943 INFO orquestador: Saga tx=E2E-R-CAIDO-2 termin├│ en PENDIENTE
+orquestador-1        | 2026-11-24 04:33:54,944 INFO werkzeug: 172.18.0.6 - - [24/Nov/2026 04:33:54] "[35m[1mPOST /despachar HTTP/1.1[0m" 201 -
+orquestador-1        | 2026-11-24 04:33:55,446 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:33:55] "GET /admin/resiliencia HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:33:58,604 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:33:58] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:34:50] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:34:55] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:35:00] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:35:05] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:35:10] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:35:16] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:35:21] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:34:03,782 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:34:03] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:34:08,972 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:34:08] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:35:26] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 172.18.0.5 - - [24/Nov/2026 04:35:29] "POST /ejecutar HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:35:31] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:35:36] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:32:16,559 INFO werkzeug: 172.18.0.1 - - [24/Nov/2026 04:32:16] "[35m[1mPOST /v1/dispensaciones HTTP/1.1[0m" 201 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:35:42] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:32:21,930 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:32:21] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:32:27,131 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:32:27] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:32:32,289 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:32:32] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:32:37,424 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:32:37] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:32:42,574 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:32:42] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:32:47,743 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:32:47] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:32:17,175 INFO werkzeug: 172.18.0.1 - - [24/Nov/2026 04:32:17] "[35m[1mPOST /v1/dispensaciones HTTP/1.1[0m" 201 -
+gateway-1            | 2026-11-24 04:32:18,516 INFO werkzeug: 172.18.0.1 - - [24/Nov/2026 04:32:18] "[35m[1mPOST /v1/dispensaciones HTTP/1.1[0m" 201 -
+gateway-1            | 2026-11-24 04:32:20,039 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:32:20] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:34:14,151 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:34:14] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:32:25,327 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:32:25] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:32:30,585 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:32:30] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:32:35,772 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:32:35] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:32:40,929 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:32:40] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:32:46,091 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:32:46] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:32:51,310 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:32:51] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:32:56,493 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:32:56] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:34:15,306 INFO resiliencia: Resiliencia tx=E2E-BH-1: receta validada, circuito=CERRADO
+orquestador-1        | 2026-11-24 04:34:15,344 INFO saga: Saga tx=E2E-BH-1: despacho confirmado
+orquestador-1        | 2026-11-24 04:34:15,345 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:34:15] "POST /reanudar/E2E-BH-1 HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:33:01,642 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:33:01] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:33:06,788 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:33:06] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:33:11,971 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:33:11] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:33:17,135 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:33:17] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:33:22,420 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:33:22] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:33:27,651 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:33:27] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:33:29,660 INFO werkzeug: 172.18.0.1 - - [24/Nov/2026 04:33:29] "[35m[1mPOST /v1/dispensaciones HTTP/1.1[0m" 201 -
+gateway-1            | 2026-11-24 04:33:31,589 INFO werkzeug: 172.18.0.1 - - [24/Nov/2026 04:33:31] "[35m[1mPOST /v1/dispensaciones HTTP/1.1[0m" 201 -
+gateway-1            | 2026-11-24 04:33:31,605 INFO werkzeug: 172.18.0.1 - - [24/Nov/2026 04:33:31] "[35m[1mPOST /v1/dispensaciones HTTP/1.1[0m" 201 -
+gateway-1            | 2026-11-24 04:33:31,621 INFO werkzeug: 172.18.0.1 - - [24/Nov/2026 04:33:31] "[35m[1mPOST /v1/dispensaciones HTTP/1.1[0m" 201 -
+gateway-1            | 2026-11-24 04:33:31,635 INFO werkzeug: 172.18.0.1 - - [24/Nov/2026 04:33:31] "[35m[1mPOST /v1/dispensaciones HTTP/1.1[0m" 201 -
+gateway-1            | 2026-11-24 04:33:32,904 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:33:32] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:32:52,899 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:32:52] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:33:38,097 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:33:38] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:32:58,065 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:32:58] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:33:03,218 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:33:03] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:33:08,414 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:33:08] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:33:13,580 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:33:13] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:33:18,749 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:33:18] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:35:47] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:35:52] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:35:57] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:36:02] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:36:07] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:36:13] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:34:15,938 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:34:15] "GET /admin/resiliencia HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:36:18] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:33:43,296 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:33:43] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:33:48,464 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:33:48] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:33:23,920 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:33:23] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:33:29,099 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:33:29] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:33:34,261 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:33:34] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:33:39,444 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:33:39] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:36:23] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:34:19,359 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:34:19] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:34:24,578 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:34:24] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:34:29,764 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:34:29] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:34:34,963 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:34:34] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:34:38,620 INFO orquestador: Contadores y circuito de resiliencia reiniciados
+orquestador-1        | 2026-11-24 04:34:38,620 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:34:38] "POST /admin/resiliencia/reset HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:34:39,359 INFO orquestador: Iniciando Saga tx=E2E-DESPACHO-CAIDO
+orquestador-1        | 2026-11-24 04:34:39,386 INFO saga: Saga tx=E2E-DESPACHO-CAIDO: stock reservado
+orquestador-1        | 2026-11-24 04:34:39,402 INFO resiliencia: Resiliencia tx=E2E-DESPACHO-CAIDO: receta validada, circuito=CERRADO
+orquestador-1        | 2026-11-24 04:34:39,402 INFO saga: Saga tx=E2E-DESPACHO-CAIDO: receta validada
+orquestador-1        | 2026-11-24 04:34:39,439 INFO saga: Saga tx=E2E-DESPACHO-CAIDO: compensaci├│n COMPENSADA (liberaci├│n exito=True)
+orquestador-1        | 2026-11-24 04:34:39,440 INFO orquestador: Saga tx=E2E-DESPACHO-CAIDO termin├│ en COMPENSADA
+orquestador-1        | 2026-11-24 04:34:39,440 INFO werkzeug: 172.18.0.6 - - [24/Nov/2026 04:34:39] "[35m[1mPOST /despachar HTTP/1.1[0m" 201 -
+orquestador-1        | 2026-11-24 04:34:39,500 INFO werkzeug: 172.18.0.6 - - [24/Nov/2026 04:34:39] "GET /estado/E2E-DESPACHO-CAIDO HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:34:40,072 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:34:40] "GET /admin/resiliencia HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:34:40,170 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:34:40] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:34:45,350 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:34:45] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:34:50,588 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:34:50] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:34:55,766 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:34:55] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:35:00,987 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:00] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:35:04,690 INFO orquestador: Contadores y circuito de resiliencia reiniciados
+orquestador-1        | 2026-11-24 04:35:04,690 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:04] "POST /admin/resiliencia/reset HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:35:06,169 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:06] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:35:08,532 INFO orquestador: Iniciando Saga tx=E2E-STOCK-CAIDO
+orquestador-1        | 2026-11-24 04:35:11,384 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:11] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:35:11,564 INFO orquestador: Saga tx=E2E-STOCK-CAIDO termin├│ en PENDIENTE
+gateway-1            | 2026-11-24 04:33:53,644 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:33:53] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:35:11,565 INFO werkzeug: 172.18.0.6 - - [24/Nov/2026 04:35:11] "[35m[1mPOST /despachar HTTP/1.1[0m" 201 -
+gateway-1            | 2026-11-24 04:33:54,835 INFO werkzeug: 172.18.0.1 - - [24/Nov/2026 04:33:54] "[35m[1mPOST /v1/dispensaciones HTTP/1.1[0m" 201 -
+orquestador-1        | 2026-11-24 04:35:16,627 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:16] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:35:21,842 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:21] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:35:27,035 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:27] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:35:29,561 INFO resiliencia: Resiliencia tx=E2E-STOCK-CAIDO: receta validada, circuito=CERRADO
+orquestador-1        | 2026-11-24 04:35:29,585 INFO saga: Saga tx=E2E-STOCK-CAIDO: despacho confirmado
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:36:28] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:33:44,658 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:33:44] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:33:54,947 INFO werkzeug: 172.18.0.1 - - [24/Nov/2026 04:33:54] "[35m[1mPOST /v1/dispensaciones HTTP/1.1[0m" 201 -
+gateway-1            | 2026-11-24 04:33:58,825 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:33:58] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:34:04,001 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:34:04] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:34:09,164 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:34:09] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:34:14,363 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:34:14] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:33:49,824 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:33:49] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:33:55,008 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:33:55] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:34:00,179 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:34:00] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:34:05,341 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:34:05] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:34:19,560 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:34:19] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:34:24,753 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:34:24] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:34:29,930 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:34:29] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:34:35,097 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:34:35] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:34:39,443 INFO werkzeug: 172.18.0.1 - - [24/Nov/2026 04:34:39] "[35m[1mPOST /v1/dispensaciones HTTP/1.1[0m" 201 -
+gateway-1            | 2026-11-24 04:34:39,529 INFO werkzeug: 172.18.0.1 - - [24/Nov/2026 04:34:39] "GET /v1/dispensaciones/E2E-DESPACHO-CAIDO HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:34:40,302 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:34:40] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:34:45,515 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:34:45] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:36:33] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:34:50,716 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:34:50] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:34:55,895 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:34:55] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:35:01,127 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:01] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:35:06,311 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:06] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:35:29,587 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:29] "POST /reanudar/E2E-STOCK-CAIDO HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:35:30,106 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:30] "GET /admin/resiliencia HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:35:11,532 ERROR gateway: No se pudo enrutar POST ÔåÆ http://bff-web:8090/dispensaciones: HTTPConnectionPool(host='bff-web', port=8090): Read timed out. (read timeout=3)
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:36:39] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:36:44] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:36:49] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:36:54] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:35:11,534 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:11] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:35:11,536 INFO werkzeug: 172.18.0.1 - - [24/Nov/2026 04:35:11] "[35m[1mPOST /v1/dispensaciones HTTP/1.1[0m" 503 -
+gateway-1            | 2026-11-24 04:35:16,751 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:16] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:35:21,947 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:21] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:35:27,130 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:27] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:35:32,304 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:32] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:35:37,523 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:37] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:35:42,713 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:42] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:35:47,921 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:47] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:34:10,507 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:34:10] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:35:53,125 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:53] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:35:58,369 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:58] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:36:03,553 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:36:03] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:36:08,775 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:36:08] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:36:14,077 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:36:14] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:36:19,318 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:36:19] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:36:24,582 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:36:24] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:35:32,212 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:32] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:36:29,789 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:36:29] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:35:37,417 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:37] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:35:42,610 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:42] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 172.18.0.5 - - [24/Nov/2026 04:36:57] "POST /ejecutar HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:34:15,314 INFO despacho_service: Crear despacho tx=E2E-BH-1 [Modo actual: normal]
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:36:59] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:35:47,846 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:47] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:35:48,381 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:48] "[33mGET /estado/E2E-STOCK-CAIDO-2 HTTP/1.1[0m" 404 -
+orquestador-1        | 2026-11-24 04:35:53,030 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:53] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:35:54,647 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:54] "[33mPOST /reanudar/E2E-STOCK-CAIDO-2 HTTP/1.1[0m" 404 -
+servicio-despacho-1  | 2026-11-24 04:34:15,331 INFO werkzeug: 172.18.0.5 - - [24/Nov/2026 04:34:15] "[35m[1mPOST /crear HTTP/1.1[0m" 201 -
+servicio-despacho-1  | 2026-11-24 04:34:15,744 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:34:15] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:34:20,975 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:34:20] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:34:26,144 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:34:26] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:36:34,968 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:36:34] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:34:31,320 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:34:31] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:34:36,487 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:34:36] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:34:39,165 INFO despacho_service: Modo de falla del despacho cambiado a caido
+servicio-despacho-1  | 2026-11-24 04:34:39,166 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:34:39] "POST /admin/modo/caido HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:34:39,406 INFO despacho_service: Crear despacho tx=E2E-DESPACHO-CAIDO [Modo actual: caido]
+servicio-despacho-1  | 2026-11-24 04:34:39,407 WARNING despacho_service: Simulaci├│n de ca├¡da: no se crea el despacho de E2E-DESPACHO-CAIDO
+servicio-despacho-1  | 2026-11-24 04:34:39,407 INFO werkzeug: 172.18.0.5 - - [24/Nov/2026 04:34:39] "[35m[1mPOST /crear HTTP/1.1[0m" 503 -
+servicio-despacho-1  | 2026-11-24 04:34:39,414 INFO werkzeug: 172.18.0.5 - - [24/Nov/2026 04:34:39] "[33mGET /estado/E2E-DESPACHO-CAIDO HTTP/1.1[0m" 404 -
+servicio-despacho-1  | 2026-11-24 04:34:39,506 INFO werkzeug: 172.18.0.6 - - [24/Nov/2026 04:34:39] "[33mGET /estado/E2E-DESPACHO-CAIDO HTTP/1.1[0m" 404 -
+servicio-despacho-1  | 2026-11-24 04:34:40,729 INFO despacho_service: Modo de falla del despacho cambiado a normal
+servicio-despacho-1  | 2026-11-24 04:34:40,730 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:34:40] "POST /admin/modo/normal HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:35:58,250 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:58] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:36:03,451 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:36:03] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:36:08,660 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:36:08] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:36:13,914 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:36:13] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:36:19,170 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:36:19] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:36:24,387 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:36:24] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:36:29,600 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:36:29] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:36:34,793 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:36:34] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:36:39,974 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:36:39] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:36:45,147 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:36:45] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:36:46,898 INFO orquestador: Iniciando Saga tx=E2E-STOCK-CAIDO-3
+orquestador-1        | 2026-11-24 04:36:49,923 INFO orquestador: Saga tx=E2E-STOCK-CAIDO-3 termin├│ en PENDIENTE
+orquestador-1        | 2026-11-24 04:36:49,924 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:36:49] "[35m[1mPOST /despachar HTTP/1.1[0m" 201 -
+orquestador-1        | 2026-11-24 04:36:50,362 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:36:50] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:36:50,486 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:36:50] "GET /estado/E2E-STOCK-CAIDO-3 HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:36:55,568 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:36:55] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:36:57,815 INFO resiliencia: Resiliencia tx=E2E-STOCK-CAIDO-3: receta validada, circuito=CERRADO
+orquestador-1        | 2026-11-24 04:36:57,840 INFO saga: Saga tx=E2E-STOCK-CAIDO-3: despacho confirmado
+orquestador-1        | 2026-11-24 04:36:57,842 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:36:57] "POST /reanudar/E2E-STOCK-CAIDO-3 HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:36:58,361 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:36:58] "GET /estado/E2E-STOCK-CAIDO-3 HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:37:00,746 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:37:00] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:37:05,911 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:37:05] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:37:11,066 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:37:11] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:37:16,295 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:37:16] "GET /salud HTTP/1.1" 200 -
+orquestador-1        | 2026-11-24 04:37:21,495 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:37:21] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:36:40,219 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:36:40] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:37:05] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:34:41,729 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:34:41] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:34:46,925 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:34:46] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:36:45,478 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:36:45] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:36:50,751 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:36:50] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:34:52,102 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:34:52] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:34:57,270 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:34:57] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:35:02,464 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:02] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:37:10] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:37:15] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:35:07,634 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:07] "GET /salud HTTP/1.1" 200 -
+servicio-receta-1    | 127.0.0.1 - - [24/Nov/2026 04:37:20] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:35:12,927 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:12] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:35:18,119 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:18] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:35:23,394 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:23] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:35:28,575 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:28] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:36:55,930 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:36:55] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:37:01,107 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:37:01] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:37:06,292 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:37:06] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:37:11,501 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:37:11] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:37:16,836 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:37:16] "GET /salud HTTP/1.1" 200 -
+gateway-1            | 2026-11-24 04:37:22,050 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:37:22] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:35:29,564 INFO despacho_service: Crear despacho tx=E2E-STOCK-CAIDO [Modo actual: normal]
+servicio-despacho-1  | 2026-11-24 04:35:29,575 INFO werkzeug: 172.18.0.5 - - [24/Nov/2026 04:35:29] "[35m[1mPOST /crear HTTP/1.1[0m" 201 -
+servicio-despacho-1  | 2026-11-24 04:35:33,755 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:33] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:35:38,970 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:38] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:35:44,166 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:44] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:35:49,360 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:49] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:35:54,567 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:54] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:35:59,768 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:35:59] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:36:04,925 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:36:04] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:36:10,096 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:36:10] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:36:15,332 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:36:15] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:36:20,536 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:36:20] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:36:25,844 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:36:25] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:36:31,065 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:36:31] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:36:36,228 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:36:36] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:36:41,403 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:36:41] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:36:46,611 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:36:46] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:36:51,834 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:36:51] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:36:57,001 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:36:57] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:36:57,818 INFO despacho_service: Crear despacho tx=E2E-STOCK-CAIDO-3 [Modo actual: normal]
+servicio-despacho-1  | 2026-11-24 04:36:57,831 INFO werkzeug: 172.18.0.5 - - [24/Nov/2026 04:36:57] "[35m[1mPOST /crear HTTP/1.1[0m" 201 -
+servicio-despacho-1  | 2026-11-24 04:37:02,167 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:37:02] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:37:07,367 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:37:07] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:37:12,600 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:37:12] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:37:17,802 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:37:17] "GET /salud HTTP/1.1" 200 -
+servicio-despacho-1  | 2026-11-24 04:37:23,036 INFO werkzeug: 127.0.0.1 - - [24/Nov/2026 04:37:23] "GET /salud HTTP/1.1" 200 -

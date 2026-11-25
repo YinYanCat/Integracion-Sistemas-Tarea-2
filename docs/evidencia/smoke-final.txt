@@ -1,0 +1,16 @@
+﻿POST /v1/dispensaciones -> HTTP 201 {"estado":"COMPLETADA","id_dispensacion":"SMOKE-FINAL-1","pasos_confirmados":["stock","receta","despacho"]}
+
+GET /v1/dispensaciones/SMOKE-FINAL-1 -> HTTP 200 {"despacho":{"cantidad":1,"codigo_medicamento":"MED-1","estado":"creado","fecha":"2026-11-24 04:39:02","id_dispensacion":"SMOKE-FINAL-1","paciente_id":"PAC-SMOKE"},"medicamento":{"codigo_medicamento":"MED-1","disponible":true,"nombre":"Paracetamol 500mg","unidades_disponibles":25},"saga":{"estado":"COMPLETADA","id_dispensacion":"SMOKE-FINAL-1","pasos_confirmados":["stock","receta","despacho"],"payload":{"cantidad":1,"codigo_medicamento":"MED-1","id_dispensacion":"SMOKE-FINAL-1","paciente_id":"PAC-SMOKE"}},"validacion_receta":{"estado":"VALIDADA","fecha":"2026-11-24 04:39:02","id_dispensacion":"SMOKE-FINAL-1"}}
+
+GET /salud -> {"ok":true,"servicio":"gateway"}
+
+Receta /salud -> {"modo_actual":"normal","ok":true,"servicio":"receta"}
+Despacho /salud -> {"modo_actual":"normal","ok":true,"servicio":"despacho"}
+== ps ==
+SERVICE             STATUS
+bff-web             Up 49 minutes (healthy)
+gateway             Up 48 minutes (healthy)
+orquestador         Up 19 minutes (healthy)
+servicio-despacho   Up About an hour (healthy)
+servicio-receta     Up About an hour (healthy)
+servicio-stock      Up 2 minutes (healthy)

@@ -1,0 +1,4 @@
+﻿POST|HTTP 201|{"estado":"COMPENSADA","id_dispensacion":"E2E-DESPACHO-CAIDO","pasos_confirmados":["stock","receta"]}
+
+GET agregado|HTTP 200|{"despacho":{"detail":"no existe el despacho E2E-DESPACHO-CAIDO","instance":"/estado/E2E-DESPACHO-CAIDO","status":404,"title":"No encontrado","type":"about:blank"},"medicamento":{"codigo_medicamento":"MED-1","disponible":true,"nombre":"Paracetamol 500mg","unidades_disponibles":28},"saga":{"estado":"COMPENSADA","id_dispensacion":"E2E-DESPACHO-CAIDO","pasos_confirmados":["stock","receta"],"payload":{"cantidad":1,"codigo_medicamento":"MED-1","id_dispensacion":"E2E-DESPACHO-CAIDO","paciente_id":"PAC-E2E"}},"validacion_receta":{"estado":"VALIDADA","fecha":"2026-11-24 04:34:39","id_dispensacion":"E2E-DESPACHO-CAIDO"}}
+
