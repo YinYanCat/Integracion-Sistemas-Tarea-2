@@ -59,8 +59,9 @@ class StockServicer(stock_pb2_grpc.StockServicer):
             )
 
         logger.info(
-            "Descontar codigo=%s cantidad=%s exito=%s mensaje=%s",
-            request.codigo_medicamento, request.cantidad, exito, mensaje,
+            "Descontar tx=%s codigo=%s cantidad=%s exito=%s mensaje=%s",
+            request.id_dispensacion, request.codigo_medicamento,
+            request.cantidad, exito, mensaje,
         )
         return stock_pb2.MovimientoStockResponse(
             exito=exito, unidades_resultantes=unidades, mensaje=mensaje
@@ -79,8 +80,9 @@ class StockServicer(stock_pb2_grpc.StockServicer):
             )
 
         logger.info(
-            "Reponer codigo=%s cantidad=%s exito=%s mensaje=%s",
-            request.codigo_medicamento, request.cantidad, exito, mensaje,
+            "Reponer tx=%s codigo=%s cantidad=%s exito=%s mensaje=%s",
+            request.id_dispensacion, request.codigo_medicamento,
+            request.cantidad, exito, mensaje,
         )
         return stock_pb2.MovimientoStockResponse(
             exito=exito, unidades_resultantes=unidades, mensaje=mensaje

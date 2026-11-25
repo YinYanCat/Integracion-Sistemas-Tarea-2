@@ -31,6 +31,14 @@ SEED = [
 ]
 
 
+def inicializar_indice_unico(conn):
+    """Garantiza que un mismo movimiento no se registre dos veces."""
+    conn.execute(
+        "CREATE UNIQUE INDEX IF NOT EXISTS idx_movimientos_idem "
+        "ON movimientos(codigo_medicamento, tipo, id_dispensacion)"
+    )
+
+
 def _ensure_dir():
     directorio = os.path.dirname(DB_PATH)
     if directorio and not os.path.exists(directorio):
@@ -42,6 +50,7 @@ def init_db():
     _ensure_dir()
     with get_connection() as conn:
         conn.executescript(SCHEMA)
+        inicializar_indice_unico(conn)
         cur = conn.execute("SELECT COUNT(*) FROM medicamentos")
         if cur.fetchone()[0] == 0:
             conn.executemany(
@@ -82,10 +91,21 @@ def listar_medicamentos(conn, offset: int, limit: int):
 
 
 def reservar_unidades(conn, codigo: str, cantidad: int, id_dispensacion: str):
-    """Reserva unidades de stock para la SAGA."""
+    """Reserva unidades de stock para la SAGA. Reenviar el mismo id no descuenta dos veces."""
     med = obtener_medicamento(conn, codigo)
     if med is None:
         return False, 0, f"medicamento '{codigo}' no existe"
+
+    try:
+        conn.execute(
+            "INSERT INTO movimientos (codigo_medicamento, tipo, cantidad, id_dispensacion) "
+            "VALUES (?, 'reserva', ?, ?)",
+            (codigo, cantidad, id_dispensacion),
+        )
+    except sqlite3.IntegrityError:
+        conn.rollback()
+        actual = obtener_medicamento(conn, codigo)
+        return True, actual["unidades_disponibles"], "ok (idempotente)"
 
     cur = conn.execute(
         "UPDATE medicamentos SET unidades_disponibles = unidades_disponibles - ? "
@@ -93,33 +113,35 @@ def reservar_unidades(conn, codigo: str, cantidad: int, id_dispensacion: str):
         (cantidad, codigo, cantidad),
     )
     if cur.rowcount == 0:
+        conn.rollback()
         return False, med["unidades_disponibles"], "stock insuficiente"
 
-    conn.execute(
-        "INSERT INTO movimientos (codigo_medicamento, tipo, cantidad, id_dispensacion) "
-        "VALUES (?, 'reserva', ?, ?)",
-        (codigo, cantidad, id_dispensacion),
-    )
     conn.commit()
     nuevo = obtener_medicamento(conn, codigo)
     return True, nuevo["unidades_disponibles"], "ok"
 
 
 def liberar_unidades(conn, codigo: str, cantidad: int, id_dispensacion: str):
-    """Libera (devuelve) unidades, compensando una reserva previa."""
+    """Libera unidades. Reenviar la misma compensacion no repone dos veces."""
     med = obtener_medicamento(conn, codigo)
     if med is None:
         return False, 0, f"medicamento '{codigo}' no existe"
+
+    try:
+        conn.execute(
+            "INSERT INTO movimientos (codigo_medicamento, tipo, cantidad, id_dispensacion) "
+            "VALUES (?, 'liberacion', ?, ?)",
+            (codigo, cantidad, id_dispensacion),
+        )
+    except sqlite3.IntegrityError:
+        conn.rollback()
+        actual = obtener_medicamento(conn, codigo)
+        return True, actual["unidades_disponibles"], "ok (idempotente)"
 
     conn.execute(
         "UPDATE medicamentos SET unidades_disponibles = unidades_disponibles + ? "
         "WHERE codigo = ?",
         (cantidad, codigo),
-    )
-    conn.execute(
-        "INSERT INTO movimientos (codigo_medicamento, tipo, cantidad, id_dispensacion) "
-        "VALUES (?, 'liberacion', ?, ?)",
-        (codigo, cantidad, id_dispensacion),
     )
     conn.commit()
     nuevo = obtener_medicamento(conn, codigo)
