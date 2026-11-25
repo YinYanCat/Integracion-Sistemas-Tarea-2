@@ -18,9 +18,27 @@ services:
 
   bff-web:
     build:
-      context: ./bff_web
+      # El Dockerfile genera los stubs gRPC desde contratos/stock.proto,
+      # por eso necesita el contexto completo del repositorio.
+      context: .
+      dockerfile: bff_web/Dockerfile
     expose:
       - "8090"
+    depends_on:
+      - orquestador
+      - servicio-stock
+      - servicio-receta
+      - servicio-despacho
+
+  orquestador:
+    build:
+      # Igual que bff-web y stock: genera los stubs desde contratos/stock.proto.
+      context: .
+      dockerfile: orquestador/Dockerfile
+    volumes:
+      - saga_data:/data
+    expose:
+      - "8104"
 
   servicio-stock:
     build:
@@ -57,3 +75,4 @@ volumes:
   stock_data:
   despacho_data:
   receta_data:
+  saga_data:

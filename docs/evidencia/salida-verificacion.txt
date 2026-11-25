@@ -1,0 +1,41 @@
+== 0. salud ==
+[OK ] gateway /salud: HTTP 200 {"ok":true,"servicio":"gateway"}
+
+== 1. camino feliz ==
+[OK ] POST MED-1: HTTP 201 {"estado": "COMPLETADA", "id_dispensacion": "E2E-HAPPY-2", "pasos_confirmados": ["stock", "receta", "despacho"]}
+[OK ] GET agregado: HTTP 200 {"saga": {"estado": "COMPLETADA", "id_dispensacion": "E2E-HAPPY-2", "pasos_confirmados": ["stock", "receta", "despacho"]}, "medicamento": {...}, "despacho": {...}, "validacion_receta": {...}}
+
+== 2. sin stock (MED-3, 0 unidades) ==
+[OK ] POST MED-3: HTTP 409 {"estado": "FALLIDA", "id_dispensacion": "E2E-SIN-STOCK", "pasos_confirmados": []}
+
+== 3. validaciones ==
+[OK ] sin API key: HTTP 401
+[OK ] cantidad=0: HTTP 400 (cuerpo de error de validación del orquestador)
+
+== 4. receta lenta: 5 concurrentes, timeout + bulkhead + circuit breaker ==
+    (rate limit: esperando 11s) x5
+[OK ] E2E-LENTO-1: HTTP 201 {"estado": "PENDIENTE", "id_dispensacion": "E2E-LENTO-1", "pasos_confirmados": ["stock"]}
+[OK ] E2E-LENTO-2: HTTP 201 {"estado": "PENDIENTE", "id_dispensacion": "E2E-LENTO-2", "pasos_confirmados": ["stock"]}
+[OK ] E2E-LENTO-3: HTTP 201 {"estado": "PENDIENTE", "id_dispensacion": "E2E-LENTO-3", "pasos_confirmados": ["stock"]}
+[OK ] E2E-LENTO-4: HTTP 201 {"estado": "PENDIENTE", "id_dispensacion": "E2E-LENTO-4", "pasos_confirmados": ["stock"]}
+[OK ] E2E-LENTO-5: HTTP 201 {"estado": "PENDIENTE", "id_dispensacion": "E2E-LENTO-5", "pasos_confirmados": ["stock"]}
+  resiliencia: {"receta":{"bulkhead":{"en_vuelo":0,"limite":4},"circuito":{"abierto_hace":0.384,"enfriamiento":5.0,"estado":"ABIERTO","fallos":4},"metricas":{"aperturas":2,"exitos":0,"fallbacks":5,"fallos":4,"llamadas":4,"rechazos_bulkhead":1,"timeouts":4}}}
+
+== 5. recuperación y reanudación ==
+    (rate limit: esperando 11s)
+[OK ] reanudar E2E-LENTO-1: HTTP 200 {"estado": "COMPLETADA", "id_dispensacion": "E2E-LENTO-1", "pasos_confirmados": ["stock", "receta", "despacho"]}
+
+== 6. receta caída ==
+[OK ] POST con receta caída: HTTP 201 {"estado": "PENDIENTE", "id_dispensacion": "E2E-RECETA-CAIDO", "pasos_confirmados": ["stock"]}
+  resiliencia: {"receta":{"bulkhead":{"en_vuelo":0,"limite":4},"circuito":{"abierto_hace":0.0,"enfriamiento":5.0,"estado":"CERRADO","fallos":1},"metricas":{"aperturas":0,"exitos":1,"fallbacks":1,"fallos":1,"llamadas":2,"rechazos_bulkhead":0,"timeouts":0}}}
+
+== 7. despacho caído -> compensación ==
+    (rate limit: esperando 11s)
+[OK ] POST con despacho caído: HTTP 201 {"estado": "COMPENSADA", "id_dispensacion": "E2E-DESPACHO-CAIDO", "pasos_confirmados": ["stock", "receta"]}
+  GET agregado: {'despacho': {'detail': 'no existe el despacho E2E-DESPACHO-CAIDO', 'instance': '/estado/E2E-DESPACHO-CAIDO', 'status': 404, 'title': 'No encontrado', 'type': 'about:blank'}, 'medicamento': {'codigo_medicamento': 'MED-1', 'disponible': True, 'nombre': 'Paracetamol 500mg', 'unidades_disponibles': 42}, 'saga': {'estado': 'COMPENSADA', 'id_dispensacion': 'E2E-DESPACHO-CAIDO', 'pasos_confirmados': ['stock', 'receta'], 'payload': {'cantidad': 1, 'codigo_medicamento': 'MED-1', 'id_dispensacion': 'E2E-DESPACHO-CAIDO', 'paciente_id': 'PAC-E2E'}}, 'validacion_receta': {'estado': 'VALIDADA', 'fecha': '2026-11-25 00:50:01', 'id_dispensacion': 'E2E-DESPACHO-CAIDO'}}
+
+== 8. stock gRPC caído -> PENDIENTE y reanudación ==
+[OK ] POST interno con stock caído: HTTP 201 {"estado": "PENDIENTE", "id_dispensacion": "E2E-STOCK-CAIDO", "pasos_confirmados": []}
+[OK ] reanudar E2E-STOCK-CAIDO: HTTP 200 {"estado": "COMPLETADA", "id_dispensacion": "E2E-STOCK-CAIDO", "pasos_confirmados": ["stock", "receta", "despacho"]}
+
+RESULTADO: 16/16 comprobaciones correctas

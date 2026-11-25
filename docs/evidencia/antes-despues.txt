@@ -1,0 +1,20 @@
+== ANTES: resiliencia reiniciada, Receta en modo normal ==
+{"receta":{"bulkhead":{"en_vuelo":0,"limite":4},"circuito":{"abierto_hace":0.0,"enfriamiento":5.0,"estado":"CERRADO","fallos":0},"metricas":{"aperturas":0,"exitos":0,"fallbacks":0,"fallos":0,"llamadas":0,"rechazos_bulkhead":0,"timeouts":0}}}
+
+== ANTES: una dispensación sana ==
+(201, {'estado': 'COMPLETADA', 'id_dispensacion': 'E2E-ANTES-1', 'pasos_confirmados': ['stock', 'receta', 'despacho']})
+{"receta":{"bulkhead":{"en_vuelo":0,"limite":4},"circuito":{"abierto_hace":0.0,"enfriamiento":5.0,"estado":"CERRADO","fallos":0},"metricas":{"aperturas":0,"exitos":1,"fallbacks":0,"fallos":0,"llamadas":1,"rechazos_bulkhead":0,"timeouts":0}}}
+
+== INDUCCIÓN: Receta en modo caído + 3 peticiones ==
+  petición 1: (201, {'estado': 'PENDIENTE', 'id_dispensacion': 'E2E-CB-1', 'pasos_confirmados': ['stock']})
+  petición 2: (201, {'estado': 'PENDIENTE', 'id_dispensacion': 'E2E-CB-2', 'pasos_confirmados': ['stock']})
+  petición 3: (201, {'estado': 'PENDIENTE', 'id_dispensacion': 'E2E-CB-3', 'pasos_confirmados': ['stock']})
+DESPUÉS (circuito abierto):
+{"receta":{"bulkhead":{"en_vuelo":0,"limite":4},"circuito":{"abierto_hace":0.344,"enfriamiento":5.0,"estado":"ABIERTO","fallos":3},"metricas":{"aperturas":1,"exitos":1,"fallbacks":3,"fallos":3,"llamadas":4,"rechazos_bulkhead":0,"timeouts":0}}}
+
+== DESPUÉS: cuarta petición con circuito ABIERTO (fail-fast) ==
+  HTTP 201 en 0.060s -> {"estado": "PENDIENTE", "id_dispensacion": "E2E-CB-FAILFAST", "pasos_confirmados": ["stock"]}
+{"receta":{"bulkhead":{"en_vuelo":0,"limite":4},"circuito":{"abierto_hace":0.791,"enfriamiento":5.0,"estado":"ABIERTO","fallos":3},"metricas":{"aperturas":1,"exitos":1,"fallbacks":4,"fallos":3,"llamadas":4,"rechazos_bulkhead":0,"timeouts":0}}}
+
+== RESTAURACIÓN ==
+{"receta":{"bulkhead":{"en_vuelo":0,"limite":4},"circuito":{"abierto_hace":0.0,"enfriamiento":5.0,"estado":"CERRADO","fallos":0},"metricas":{"aperturas":0,"exitos":0,"fallbacks":0,"fallos":0,"llamadas":0,"rechazos_bulkhead":0,"timeouts":0}}}
